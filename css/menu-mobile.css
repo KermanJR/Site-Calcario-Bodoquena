@@ -1,0 +1,48 @@
+
+
+.ativo{
+    display: flex;
+    display: -webkit-flex; 
+}
+.inativo{
+    display: none;
+}
+.menu-mobile .container-mob{
+    width: 90%;
+    display: flex;
+    display: -webkit-flex; 
+    margin: 0 auto;
+    align-items: center;
+}
+
+.menu-mobile{
+    padding: 15px 0;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container-mob .menu-hamburguer{
+    flex: 6;
+}
+
+.container-mob img{
+    flex: 1;
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+    
+}
+
+.menu-hamburguer img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: rgba(177, 177, 177, 0.233);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-hamburguer nav{
+    display: none;
+}

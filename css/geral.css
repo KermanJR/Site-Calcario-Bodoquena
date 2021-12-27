@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{height: 100%;}
+a{text-decoration: none;}
+ul{list-style-type: none;}
+input{font-family: 'Montserrat', sans-serif;}
+
+header{
+    width: 100%;
+    height: 820px;
+    border: 1px solid black;
+    background-image: url('../img/featured_image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    display: -webkit-flex; 
+    flex-wrap: no-wrap;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+/*****************MENU**************************/
+.menu{
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    height: 110px;
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.726);
+    background-color: #0000005b;
+    backdrop-filter: blur(5px);
+}
+
+.menu .logomarca{
+    width: 20%;
+    text-align: center;
+}
+
+.menu .logomarca img{
+    object-fit: contain;
+    width: 80px;
+
+    height: 82px;
+}
+
+.menu nav{
+    width: 60%;
+}
+
+.menu nav ul{
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: space-around;
+}
+
+.menu nav ul li a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.4px;
+}
+.menu .contact{
+    width: 20%;
+}
+
+
+/******Conteúdo da tela inicial*/
+.main-text {
+   width: 100%;
+   padding-top: 60px;
+   height: 300px;
+   align-self: center;
+}
+
+.main-text h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-text p{
+    width: 50%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.main-text .btn-flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/******Botões página inicial*******/
+
+button{
+    border: none;
+    margin-top: 50px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 230px;
+    cursor: pointer;
+    height: 59px;
+}
+
+button:nth-of-type(1){background-color:#B8070A;}
+button:nth-of-type(1):hover{background-color:#9b0507;}
+
+button:nth-of-type(2){
+    background-color:#ffffff;
+    color: black;
+    margin-left: 20px;
+}
+button:nth-of-type(2):hover{
+    background-color:#d6d6d6;
+}
+
+
+/*****informações da tela inicial*****/
+.info{
+    width: 100%;
+    height: auto;
+}
+
+.info .container{
+    height: 300px;
+}
+
+.info .container .info-1, .info .container .info-2, .info .container .info-3{
+    flex: 1;
+    display: flex;
+    display: -webkit-flex; 
+}
+.info .container .info-1 img, .info .container .info-2 img{
+    background-color:  #B8070A;;
+    padding: 15px;
+    width: 70px;
+    height: 60px;
+    object-fit: contain;
+    align-self: center;
+}
+
+.info .container .info-1 dl, .info .container .info-2 dl, .info .container .info-3 dl{
+    width: 100%;
+    align-self: center;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.info .container .info-1 dt, .info .container .info-2 dt{
+    margin-bottom: 5px;
+}
+
+.info .container .info-1 dd, .info .container .info-2 dd, .info .container .info-3 dd{
+    width: 90%;
+    align-self: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.info .container .info-3{
+    padding-top: 0px;
+    background-color: #B8070A;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.info .container .info-3 button{
+    margin-left: -5px;
+    width: 150px;
+    margin-top: 5px;
+    background-color: #B8070A;
+}
+.info .container .info-3 dd{
+    line-height: 28px;
+    width: 90%;
+}
+
+.info .container .info-3 input{
+    background-color: #B8070A;
+    text-align: justify;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/*conteudo principal do site*/
+
+.conteudo-principal{
+    padding: 80px 0;
+}
+.conteudo-principal .container{
+    display: flex;
+    display: -webkit-flex; 
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+.conteudo-principal .conteudo-principal .title{
+    flex: 1;
+    align-content: center;
+}
+.conteudo-principal .container h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 30px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.conteudo-principal .container .title p{
+    font-style: normal;
+    width: 100%;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 28px;
+    text-align: center;
+    color: #B8070A;
+}
+
+.conteudo-principal .container .property{
+    flex: 1;
+    padding-top: 80px;
+    height: 100px;
+    display: flex;
+    display: -webkit-flex; 
+}
+
+.conteudo-principal .container .property div{
+    flex: 1;
+    height: 400px;
+}
+
+.box-1, .box-3, .box-5{
+    background-color: #B8070A;
+}
+
+.property img{
+    margin-top: 40px;
+   }
+
+.property p{
+    border-top: 2px  solid rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    margin-top: 40px;
+    letter-spacing: .3px;
+}
+
+.property .box-2 p, .property .box-4 p{
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    border-top: 2px  solid rgb(0, 0, 0);
+}
+
+
+/*tipos de calcios*/
+.image-products{
+    padding: 90px 0;
+    flex: 1;
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: space-around;
+}
+
+.image-products img{
+    width: 30vw;
+    height: auto;
+}
+
+.image-products h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #B8070A;
+    padding-bottom: 15px;
+}
+.image-products p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    width: 90%;
+    text-align: center;
+    color: #000000;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.other-products{
+    padding: 50px 50px;
+    flex: 1;
+    background-color: #B8070A;
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: space-around;
+}
+
+.conteudo-principal h4{
+    padding-top: 40px ;
+    background-color: #B8070A;
+    color : white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+.other-products p{
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.other-products img{
+    width: 15vw;
+}
+
+.office{
+    margin-top: 120px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('../img/Rectangle\ 17.png');
+    background-size: cover;
+    padding: 50px 50px;
+}
+
+.office h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 28px;
+    color: white;
+    text-align: justify;
+}
+
+.office p{
+    font-style: normal;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.office p:nth-of-type(2){
+    margin-top: 20px;
+}
+
+.office input{
+    position: relative;
+    left: 500px;
+    background-color:rgba(255, 99, 71, 0);
+}
+
+.contact{
+    width: 100%;
+    margin-top: 120px;
+    height: auto;
+}
+
+.contact .title{
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact .text-contact{
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: space-between;
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .text-contact div dl dd{
+    padding: 5px 0;
+}
+
+.contact .text-contact .contact-1, .contact .text-contact .contact-2{
+    height: 500px;
+    margin-left: 20px;
+}
+.contact .text-contact .contact-1, .contact .text-contact .contact-2{
+    flex: 1;
+    background-color: #B8070A;
+}
+.contact .text-contact .form{
+    flex: 2;
+}
+
+.contact .text-contact .contact-1 img{
+    padding-top: 40px;
+}
+
+.contact .text-contact .contact-1 img:nth-of-type(2){
+    margin-top: 10px;
+}
+
+.contact .text-contact .contact-2 img{
+    padding-top: 40px;
+}
+
+.contact .text-contact .contact-2 img:nth-of-type(2){
+    margin-top: 10px;
+}
+.contact .text-contact  .form label{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.contact .text-contact .form form{
+    padding-top: 40px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact .text-contact  .form form input[type=text]{
+    width: 49%;
+    height: 39px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 20px 10px;
+    line-height: 20px;
+}
+
+.contact .text-contact  .form form input[type=email]{
+    width: 49%;
+    margin-top: 10px;
+    height: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    padding: 20px 10px;
+}
+
+.contact .text-contact .form form textarea{
+    margin-top: 20px;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 10px 10px;
+    line-height: 20px;
+    border: none;
+}
+
+
+.contact .text-contact  .form form div{
+    text-align: left;
+}
+
+.contact .text-contact .form input[type=submit]{
+    text-align: center;
+    background-color: #B8070A;
+    color: white;
+    width: 223px;
+    height: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    border: none;
+    margin:  15px auto;
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: space-between;
+    width: 100%;
+    height: 110px;
+    align-items: center;
+    color: white;
+    background-color: #B8070A;
+    backdrop-filter: blur(5px);
+}
+
+
+footer .logomarca{
+    width: 20%;
+    text-align: center;
+}
+
+footer .logomarca img{
+    object-fit: contain;
+    width: 80px;
+
+    height: 82px;
+}
+
+footer nav{
+    width: 60%;
+}
+
+footer nav ul{
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: space-around;
+}
+
+footer nav ul li a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+}
+footer .contact{
+    width: 20%;
+}
+
+@media screen and (max-width: 1102px){
+    .container{
+        width: 100%;
+        padding: 0px 25px;
+    }
+
+    .container .main-text{
+        align-self: stretch;
+       margin-top: 40px;
+    }
+
+    .container .main-text p{
+        width: 70%;
+    }
+    .info .container{
+        flex-direction: column-reverse;
+        height: auto;
+
+    }
+    .info .container div{
+        margin-bottom: 50px;
+    }
+    .info .container div dl dt{
+        margin-bottom: 10px;
+    }
+
+    .info .container .info-3{
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 20px 0;
+        margin-top: -150px;
+    }
+
+    .conteudo-principal .container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conteudo-principal .container .title p{
+        width: 100%;
+    }
+    .conteudo-principal .container .title h2{
+        margin-bottom: 60px;
+        line-height: 40px;
+    }
+    .conteudo-principal .container .property,  .conteudo-principal .container .image-products,
+    .conteudo-principal .container .other-products, .conteudo-principal .container .contact .text-contact{
+        flex-direction: column;
+    }
+    .conteudo-principal .container .contact .text-contact div{
+        padding-bottom: 40px;
+    }
+
+    .conteudo-principal .container .contact .form{
+        padding-top: 80px;
+    }
+    
+    .conteudo-principal .container .property div,
+    .conteudo-principal .container .image-products div,  .conteudo-principal .container .other-products div{
+        padding-bottom: 50px;
+    }
+
+    .conteudo-principal .container .office{
+        height: auto;
+    }
+
+    button{
+        width: 200px;
+        height: 45px;
+    }
+    
+}
